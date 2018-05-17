@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'/>    
+    <title>document</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="http://weixin.juzhen.com/WebServices/matrix.weixin.auth.2.3.js"></script>
+    <script type="text/javascript" src="http://weixin.juzhen.com/WebServices/matrix.weixin.share.2.1.js"></script>    
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <div id="Loading">
+        <p class="loading0">Loading</p>
+        <p class="loadTxt t_center" id="text">0%</p>
+        <img src="./img/loading2.png" class="loading2">
+    </div>
+    <img src="./img/audio1.png" class="audio rotate" onClick="changeAudio();">
+    <audio src="./img/1.mp3" autoplay loop id="music"></audio> 
+    <div class="index">
+        <div class="page page0">
+            <img src="img/logo.png" class="logo">
+            <img src="img/tree.png" class="tree animated fadeIn">
+            <img src="img/bird.png" class="bird  animated fadeIn">
+            <img src="img/woman.png" class="woman  animated fadeInLeft">
+            <img src="img/smoke.png" class="smoke  animated fadeInUp">
+            <img src="img/zm0.png" class="zm0  animated fadeInDown">
+            <img src="img/zb0.png" class="zb0  animated fadeIn">
+            <div class="zz z0">
+                <img src="img/z0.png" class="tar">
+                <img src="img/zz.png" class="z">
+            </div>
+            <div class="click click0" onclick="go(1)">
+                <div class="qq"></div>
+                <p>点击观湖</p>
+            </div>
+        </div>
+        <div class="page page1">
+            <img src="img/b1-1.png" class="b1-1"> 
+            <img src="img/zb1.png" class="zb1  animated none fadeIn">
+            <img src="img/zm1-1.png" class="zm1-1  animated none fadeInDown">
+            <img src="img/zm1-2.png" class="zm1-2  animated none fadeInDown">
+            <img src="img/yun2.png" class="yun2">
+            <div class="zz z1">
+                <img src="img/z1.png" class="tar">
+                <img src="img/zz.png" class="z">
+            </div>
+            <div class="click click1" onclick="$('.tc1').fadeIn()">
+                <div class="qq"></div>
+                <p>湖水</p>
+            </div>
+        </div>
+        <div class="page page2">
+            <img src="img/b1-1.png" class="b1-1"> 
+            <img src="img/sun.png" class="sun"> 
+            <img src="img/bird2.png" class="bird2">
+            <img src="img/zm2-1.png" class="zm2-1  animated none fadeInDown">
+            <img src="img/zb2.png" class="zb2  animated none fadeIn">
+            <img src="img/zm2-2.png" class="zm2-2  animated none fadeInDown">
+            <img src="img/zm2-3.png" class="zm2-3  animated none fadeInDown">
+            <img src="img/lun.png" class="lun">
+            <img src="img/yun1.png" class="yun1">
+            <img src="img/yun3.png" class="yun3">
+            <div class="zz z2">
+                <img src="img/z2.png" class="tar">
+                <img src="img/zz.png" class="z">
+            </div>
+            <div class="click click2" onclick="$('.tc2').fadeIn()">
+                <div class="qq"></div>
+                <p>墨水湖</p>
+            </div>
+        </div>
+        <div class="page page3">
+            <img src="img/zm3-1.png" class="zm3-1  animated none fadeInDown">
+            <img src="img/zb3.png" class="zb3  animated none fadeIn">
+            <img src="img/zm3-2.png" class="zm3-2  animated none fadeInDown">
+            <img src="img/zm3-3.png" class="zm3-3  animated none fadeInDown">
+            <div class="zz z3">
+                <img src="img/z3.png" class="tar">
+                <img src="img/zz.png" class="z">
+            </div>
+            <div class="click click3" onclick="$('.tc3').fadeIn()">
+                <div class="qq"></div>
+                <p>城心公园</p>
+            </div>
+        </div>
+        <div class="page page4">
+            <img src="img/zm4-1.png" class="zm4-1  animated none fadeInDown">
+            <img src="img/zb4.png" class="zb4  animated none fadeIn">
+            <img src="img/zm4-2.png" class="zm4-2  animated none fadeInDown">
+            <img src="img/zm4-3.png" class="zm4-3  animated none fadeInDown">
+            <img src="img/yun4.png" class="yun4">
+            <div class="zz z4">
+                <img src="img/z4.png" class="tar">
+                <img src="img/zz.png" class="z">
+            </div>
+            <div class="click click4" onclick="$('.tc4').fadeIn();">
+                <div class="qq"></div>
+                <p>商贸圈</p>
+            </div>
+        </div>
+        <div class="page page5">
+            <img src="img/zm5-1.png" class="zm5-1  animated none fadeInDown">
+            <img src="img/zb5.png" class="zb5  animated none fadeIn">
+            <img src="img/zm5-2.png" class="zm5-2  animated none fadeInDown">
+            <div class="zz z5">
+                <img src="img/z5.png" class="tar">
+                <img src="img/zz.png" class="z">
+            </div>
+            <img src="img/gj.png" class="gj" onclick="">
+            
+        </div>
+        <img src="img/bridge.png" class="boat2">
+        <img src="img/tree3.png" class="tree3">
+        
+        <img src="img/hy.png" class="hy">
+        <img src="img/te.png" class="te">
+    </div>
+    <img src="img/boat2.png" class="qiao sx ">
+    
+    <div class="tc tc1">
+        <a class="an an1"></a>
+        <a class="an an2"></a>
+        <a class="an an3"></a>
+        <a class="an an4 correct"></a>
+        <a class="close" onclick="go(2)"></a>
+    </div>
+    <div class="tc tc2">
+        <a class="an an1"></a>
+        <a class="an an2"></a>
+        <a class="an an3"></a>
+        <a class="an an4 correct"></a>
+        <a class="close" onclick="go(3)"></a>
+    </div>
+    <div class="tc tc3">
+        <a class="an an1"></a>
+        <a class="an an2"></a>
+        <a class="an an3"></a>
+        <a class="an an4 correct"></a>
+        <a class="close" onclick="go(4)"></a>
+    </div>
+    <div class="tc tc4">
+        <a class="an an1 correct"></a>
+        <a class="an an2"></a>
+        <a class="an an3"></a>
+        <a class="an an4"></a>
+        <a class="close" onclick="go(5)"></a>
+    </div>
+    <div class="dui">
+        <img src="img/a1.png" class="anCh">
+        <a class="goon"></a>
+        <a class="close"></a>
+    </div>
+    <div class="cuo">
+        <img src="img/cuo1.png" class="bgg">
+        <a class="goon"></a>
+        <a class="close"></a>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>
