@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-1.12.3.min.js"></script>
+    <style>
+        input{
+            display: block;
+        }
+        #name,#pass{
+            margin-left: 60px;
+            margin-top: -18px;
+        }
+        #btn{
+            width: 75px;
+            height: 35px;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>登录</h1>
+<form action="test.php" method="get">
+    用户名:&nbsp;&nbsp;<input type="text" name="user" id="name">
+    密码:&nbsp;&nbsp;<input type="password" name="password" id="pass">
+    <input type="submit" name="" value="提交" id="btn">
+</form>
+
+<script>
+    if("<?php echo 'ok'?>" == 'ok'){
+        alert("登录成功");
+    }
+</script>
+</body>
+</html>
